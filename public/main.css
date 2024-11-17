@@ -7,6 +7,7 @@ h1 {
 
 body {
     p-adding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
@@ -20,4 +21,75 @@ body {
 
 .hero-container {
     p-osition: relative;
+}
+
+.gross-titel {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+
+/* Entfernt die Standard-Aufzählungszeichen */
+ul.arrow-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 30px;;
+}
+
+/* Fügt einen Pfeil als Inhalt hinzu */
+ul.arrow-list li {
+    display: flex;
+    j-ustify-content: center;
+    position: relative;
+    padding-left: 25px;  /* Platz für den Pfeil */
+}
+
+ul.arrow-list li::before {
+    c-ontent: '→';  /* Unicode-Pfeil */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;  /* Größe des Pfeils */
+    color: #333;  /* Farbe des Pfeils */
+}
+
+
+
+.santa-claus {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+/* Stellt sicher, dass die Antwort zunächst verborgen ist */
+.faq-answer {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Wenn die Checkbox angeklickt wird, zeige die Antwort an */
+.faq-toggle:checked + label + .faq-answer {
+    display: block;
+    
+}
+
+/* Optional: Stil für das Label, wenn die Frage angeklickt wird */
+label {
+    cursor: pointer;
+    font-size: 18px;
+   
+}
+
+/* Stil für die Antwort, wenn sie sichtbar wird */
+.faq-answer {
+    font-size: 16px;
+    color: #333;
+}
+
+.faq-toggle{
+    display: inline-block;
 }
